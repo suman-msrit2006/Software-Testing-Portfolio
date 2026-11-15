@@ -4,8 +4,8 @@
 |------|---------|
 | Application | BlissBite (http://localhost:3000, backend http://localhost:5000) |
 | Browser | Google Chrome |
-| Executed by | [name] |
-| Execution date | [date] |
+| Executed by | Suman J Mulla (1MS23IS130) |
+| Execution date | 15-11-2026 |
  
 **How to fill this sheet:** run each test case in the application, write what actually happened in *Actual Result*, mark *Status* as Pass or Fail, and for every Fail write the defect ID (for example DEF-02) and save a screenshot in `07_Screenshots`.
  
