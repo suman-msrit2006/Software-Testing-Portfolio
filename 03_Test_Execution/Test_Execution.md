@@ -15,12 +15,12 @@
  
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
 |-------|-------------|-----------|-----------------|---------------|--------|-----------|
-| SU_01 | Signup with all valid details | Rahul Sharma, rahul.sharma@test.com, Bengaluru, Test1234 | Account created, user taken to home page | | | |
-| SU_02 | Invalid email format | rahul.test.com | Account not created; error shown | | | |
-| SU_03 | Name with 4 characters | Ravi | Account not created; error shown | | | |
-| SU_04 | Name with 5 characters | Rahul | Account created | | | |
-| SU_05 | Password with 4 characters | Ab12 | Account not created; error shown | | | |
-| SU_06 | Password with 5 characters | Ab123 | Account created | | | |
+| SU_01 | Signup with all valid details | Rahul Sharma, rahul.sharma@test.com, Bengaluru, Test1234 | Account created, user taken to home page | Account created; redirected to the home page | Pass | - |
+| SU_02 | Invalid email format | rahul.test.com | Account not created; error shown | Browser validation message "Please include an '@' in the email address" appeared; form was not submitted; no account created (see 07_Screenshots/SU_02_invalid_email_validation.png) | Pass | - |
+| SU_03 | Name with 4 characters | Ravi, su03@test.com | Account not created; error shown | Redirected to the home page as if signup succeeded; no error message shown. Login with su03@test.com / Test1234 then failed with "Enter Valid Credentials", so the account was not created (see 07_Screenshots/SU_03_name_4_chars.png, SU_03_login_check.png) | Fail | DEF-01 |
+| SU_04 | Name with 5 characters | Rahul, su04@test.com | Account created | Account created with a 5-character name; redirected to the home page; login with su04@test.com succeeded (see 07_Screenshots/SU_04_name_5_chars.png) | Pass | - |
+| SU_05 | Password with 4 characters | Ab12, su05@test.com | Account not created; error shown | Redirected to the home page as if signup succeeded; no error message shown. Login with su05@test.com / Ab12 then failed with "Enter Valid Credentials", so the account was not created (see 07_Screenshots/SU_05_password_4_chars.png, SU_05_login_check.png) | Fail | DEF-01 |
+| SU_06 | Password with 5 characters | Ab123, su06@test.com | Account created | Account created with a 5-character password; redirected to the home page; login with su06@test.com succeeded (see 07_Screenshots/SU_06_password_5_chars.png) | Pass | - |
 | SU_07 | Location with 4 characters | Pune | Account not created; error shown | | | |
 | SU_08 | Location with 5 characters | Delhi | Account created | | | |
 | SU_09 | Duplicate email | Email used in SU_01 | Account not created; message that email exists | | | |
