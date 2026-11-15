@@ -34,4 +34,4 @@ Users can submit an empty form and are misled into thinking signup worked. No ac
 Windows, Google Chrome, BlissBite running locally (frontend port 3000, backend port 5000)
 
 ## Evidence
-- 07_Screenshots/SU_10_all_fields_empty.png
+- 07_Screenshots/Signup/SU_10_all_fields_empty.png
