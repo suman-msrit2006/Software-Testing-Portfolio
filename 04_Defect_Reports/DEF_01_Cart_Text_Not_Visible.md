@@ -54,12 +54,11 @@ Users who enter invalid data, or an email that is already registered, are misled
 ## Environment
 Windows, Google Chrome, BlissBite running locally (frontend port 3000, backend port 5000)
 
-## Evidence
-- 07_Screenshots/SU_03_name_4_chars.png
-- 07_Screenshots/SU_03_login_check.png
-- 07_Screenshots/SU_05_password_4_chars.png
-- 07_Screenshots/SU_05_login_check.png
-- 07_Screenshots/SU_07_location_4_chars.png
-- 07_Screenshots/SU_07_login_check.png
-- 07_Screenshots/SU_09_duplicate_email.png
-- 07_Screenshots/SU_09_login_check.png
+- 07_Screenshots/Signup/SU_03_name_4_chars.png
+- 07_Screenshots/Signup/SU_03_login_check.png
+- 07_Screenshots/Signup/SU_05_password_4_chars.png
+- 07_Screenshots/Signup/SU_05_login_check.png
+- 07_Screenshots/Signup/SU_07_location_4_chars.png
+- 07_Screenshots/Signup/SU_07_login_check.png
+- 07_Screenshots/Signup/SU_09_duplicate_email.png
+- 07_Screenshots/Signup/SU_09_login_check.png
