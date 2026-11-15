@@ -1,1 +1,0 @@
-Defects found during testing
