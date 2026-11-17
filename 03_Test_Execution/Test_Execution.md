@@ -38,15 +38,15 @@
 | LG_06 | Logout after login | Click Logout | Session cleared; login page; navbar shows Login and Signup | Logout cleared the session; user taken to the login page; navbar shows Login and Signup (see 07_Screenshots/Login/LG_06_logged_in_before.png, LG_06_logout.png) | Pass | - |
  
 ## 3. Menu and search
- 
+
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
 |-------|-------------|-----------|-----------------|---------------|--------|-----------|
-| MN_01 | Home page shows the menu | Open home page | 3 categories with all food items displayed | | | |
-| MN_02 | Search with matching word | paneer | Only items containing "paneer" shown | | | |
-| MN_03 | Search is not case sensitive | PANEER | Same results as MN_02 | | | |
-| MN_04 | Search with no match | xyz123 | No food items shown | | | |
-| MN_05 | Clear the search box | Empty search | All items displayed again | | | |
-| MN_06 | Price changes with portion size | Switch half and full | Displayed price matches option and quantity | | | |
+| MN_01 | Home page shows the menu | Open home page | 3 categories with all food items displayed | Home page displayed 3 categories (Pizza, Biryani/Rice, Starter) with all 12 food items, each with name, quantity, option and price. The image for Mix Veg Pizza failed to load (broken image icon), and a broken image icon appears at the top-left under the navbar (see 07_Screenshots/Menu_Search/MN_01_menu_display.png, MN_01_menu_display_2.png, DEF-03_mix_veg_pizza_image.png) | Fail | DEF-03 |
+| MN_02 | Search with matching word | paneer | Only items containing "paneer" shown | Typed "paneer" in the search box; only 3 items were shown (Chilli Paneer, Paneer Tikka, Paneer 65) under the Starter category. Other items and empty categories were hidden (see 07_Screenshots/Menu_Search/MN_02_search_paneer.png) | Pass | - |
+| MN_03 | Search is not case sensitive | PANEER | Same results as MN_02 | Typed "PANEER" in capitals; the same 3 items as MN_02 were shown (Chilli Paneer, Paneer Tikka, Paneer 65) under the Starter category (see 07_Screenshots/Menu_Search/MN_03_search_uppercase.png) | Pass | - |
+| MN_04 | Search with no match | xyz123 | No food items shown | Typed "xyz123"; no food items were shown, category headings were hidden, and the message "No food items found" appeared (see 07_Screenshots/Menu_Search/MN_04_search_no_match.png) | Pass | - |
+| MN_05 | Clear the search box | Empty search | All items displayed again | Cleared the search box; all 3 categories (Pizza, Biryani/Rice, Starter) and all 12 food items were displayed again (see 07_Screenshots/Menu_Search/MN_05_search_cleared.png) | Pass | - |
+| MN_06 | Price changes with portion size | Switch half and full | Displayed price matches option and quantity | Changed the option and quantity on Paneer 65 (half x1 = ₹150, full x1 = ₹260, full x2 = ₹560). The price changed with each selection and matched quantity x option price (see 07_Screenshots/Menu_Search/MN_06_price_portion.png) | Pass | - |
  
 ## 4. Cart
  
