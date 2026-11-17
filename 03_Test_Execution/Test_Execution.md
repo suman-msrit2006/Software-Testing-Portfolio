@@ -27,14 +27,14 @@
 | SU_10 | All fields empty | All blank | Form not submitted or error shown | Form was submitted with all fields empty; no validation message appeared and the user was redirected to the home page (see 07_Screenshots/Signup/SU_10_all_fields_empty.png) | Fail | DEF-02 |
  
 ## 2. Login
- 
+
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
 |-------|-------------|-----------|-----------------|---------------|--------|-----------|
-| LG_01 | Valid credentials | Email and password from SU_01 | Login succeeds; home page; navbar shows My Orders and Logout | | | |
-| LG_02 | Correct email, wrong password | Wrong999 | Alert "Enter Valid Credentials" | | | |
-| LG_03 | Unregistered email | nouser@test.com | Alert "Enter Valid Credentials" | | | |
+| LG_01 | Valid credentials | rahul.sharma@test.com, Test1234 (account from SU_01) | Login succeeds; home page; navbar shows My Orders and Logout | Login succeeded; redirected to the home page; navbar shows My Orders and Logout (see 07_Screenshots/Login/LG_01_valid_login.png) | Pass | - |
+| LG_02 | Correct email, wrong password | rahul.sharma@test.com, Wrong999 | Alert "Enter Valid Credentials" | Alert "Enter Valid Credentials" appeared; user stayed on the login page; navbar still shows Login and Signup (see 07_Screenshots/Login/LG_02_wrong_password.png) | Pass | - |
+| LG_03 | Unregistered email | nouser@test.com, Test1234 | Alert "Enter Valid Credentials" | Alert "Enter Valid Credentials" appeared; user stayed on the login page; navbar still shows Login and Signup (see 07_Screenshots/Login/LG_03_unregistered_email.png) | Pass | - |
 | LG_04 | Empty fields | Both blank | Login not allowed | | | |
-| LG_05 | 4-character password | Ab12 | Login rejected | | | |
+| LG_05 | 4-character password | rahul.sharma@test.com, Ab12 | Login rejected | | | |
 | LG_06 | Logout after login | Click Logout | Session cleared; login page; navbar shows Login and Signup | | | |
  
 ## 3. Menu and search
