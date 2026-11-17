@@ -105,11 +105,11 @@ All members take part in execution, and each member commits their own work to th
 | Environment setup and application exploration | 14-11-2026 |
 | Test plan | 15-11-2026 |
 | Test case design | 15-11-2026 |
-| Test execution | [add date] |
-| Defect reporting | [add date] |
-| Postman API testing | [add date] |
-| Test summary report and conclusion | [add date] |
-| Demonstration to faculty | [add date] |
+| Test execution | 17-11-2026 |
+| Defect reporting | 17-11-2026 |
+| Postman API testing | 17-11-2026 |
+| Test summary report and conclusion | 17-11-2026 |
+| Demonstration to faculty | 18-11-2026 |
  
 ## 11. Entry and Exit Criteria
 **Entry criteria**
