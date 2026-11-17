@@ -46,7 +46,7 @@
 | MN_03 | Search is not case sensitive | PANEER | Same results as MN_02 | Typed "PANEER" in capitals; the same 3 items as MN_02 were shown (Chilli Paneer, Paneer Tikka, Paneer 65) under the Starter category (see 07_Screenshots/Menu_Search/MN_03_search_uppercase.png) | Pass | - |
 | MN_04 | Search with no match | xyz123 | No food items shown | Typed "xyz123"; no food items were shown, category headings were hidden, and the message "No food items found" appeared (see 07_Screenshots/Menu_Search/MN_04_search_no_match.png) | Pass | - |
 | MN_05 | Clear the search box | Empty search | All items displayed again | Cleared the search box; all 3 categories (Pizza, Biryani/Rice, Starter) and all 12 food items were displayed again (see 07_Screenshots/Menu_Search/MN_05_search_cleared.png) | Pass | - |
-| MN_06 | Price changes with portion size | Switch half and full | Displayed price matches option and quantity | Changed the option and quantity on Paneer 65 (half x1 = ₹150, full x1 = ₹260, full x2 = ₹560). The price changed with each selection and matched quantity x option price (see 07_Screenshots/Menu_Search/MN_06_price_portion.png) | Pass | - |
+| MN_06 | Price changes with portion size | Switch half and full | Displayed price matches option and quantity | Changed the option and quantity on Paneer 65 (half x1 = ₹150, full x1 = ₹260, full x2 = ₹520). The price changed with each selection and matched quantity x option price (see 07_Screenshots/Menu_Search/MN_06_price_portion.png) | Pass | - |
  
 ## 4. Cart
  
