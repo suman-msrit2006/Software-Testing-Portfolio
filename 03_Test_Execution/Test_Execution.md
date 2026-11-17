@@ -35,7 +35,7 @@
 | LG_03 | Unregistered email | nouser@test.com, Test1234 | Alert "Enter Valid Credentials" | Alert "Enter Valid Credentials" appeared; user stayed on the login page; navbar still shows Login and Signup (see 07_Screenshots/Login/LG_03_unregistered_email.png) | Pass | - |
 | LG_04 | Empty fields | Both blank | Login not allowed | Alert "Enter Valid Credentials" appeared; login rejected; user stayed on the login page; navbar still shows Login and Signup. The empty form was sent to the server (no browser "fill out this field" tooltip) (see 07_Screenshots/Login/LG_04_empty_fields.png) | Pass | - |
 | LG_05 | 4-character password | rahul.sharma@test.com, Ab12 | Login rejected | Alert "Enter Valid Credentials" appeared; login rejected; user stayed on the login page (see 07_Screenshots/Login/LG_05_password_4_chars.png) | Pass | - |
-Logout cleared the session; user taken to the login page; navbar shows Login and Signup. Opening /myorder after logout did not show order history (see 07_Screenshots/Login/LG_06_logged_in_before.png, LG_06_logout.png)
+| LG_06 | Logout after login | Click Logout | Session cleared; login page; navbar shows Login and Signup | Logout cleared the session; user taken to the login page; navbar shows Login and Signup (see 07_Screenshots/Login/LG_06_logged_in_before.png, LG_06_logout.png) | Pass | - |
  
 ## 3. Menu and search
  
