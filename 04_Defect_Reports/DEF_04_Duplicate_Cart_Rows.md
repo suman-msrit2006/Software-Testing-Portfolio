@@ -6,7 +6,7 @@
 | Module | Cart |
 | Application | BlissBite (localhost:3000) |
 | Related test cases | CT_04, CT_06 |
-| Reported by | Suman Mulla |
+| Reported by | Suman J Mulla |
 | Date | 18-11-2026 |
 | Severity | Minor |
 | Priority | Medium |
