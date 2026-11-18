@@ -69,7 +69,7 @@ Test cases covering the rules: R1 = LG_01, R2 = LG_02, R3 and R4 = LG_03.
 | CT_07 | EP | Remove an item | Click Remove on one row | Row is removed and the total is updated |
 | CT_08 | EP | Total price calculation | 3 items in the cart | Total = sum of all row amounts |
 | CT_09 | EP | Open the cart with nothing in it | Empty cart | Message "The Cart is Empty!" is displayed |
-| CT_10 | EP | Cart details are readable (DEF-01) | Cart with items | Item name, quantity, option, amount, total and Check Out text are clearly visible |
+| CT_10 | EP | Cart details are readable (DEF-05) | Cart with items | Item name, quantity, option, amount, total and Check Out text are clearly visible |
 | CT_11 | EP | Add to cart without logging in | Not logged in, select quantity or option | User is redirected to the login page |
  
 ## 5. Order and order history module
