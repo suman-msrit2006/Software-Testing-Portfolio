@@ -49,21 +49,22 @@
 | MN_06 | Price changes with portion size | Switch half and full | Displayed price matches option and quantity | Changed the option and quantity on Paneer 65 (half x1 = ₹150, full x1 = ₹260, full x2 = ₹520). The price changed with each selection and matched quantity x option price (see 07_Screenshots/Menu_Search/MN_06_price_portion.png) | Pass | - |
  
 ## 4. Cart
- 
+
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
 |-------|-------------|-----------|-----------------|---------------|--------|-----------|
-| CT_01 | Quantity 1 (minimum) | Qty 1, half | 1 row; amount = 1 x half price | | | |
-| CT_02 | Quantity 6 (maximum) | Qty 6, full | Quantity 6; amount = 6 x full price | | | |
-| CT_03 | Maximum quantity offered | Open quantity dropdown | Only 1 to 6 offered; 7 not selectable | | | |
-| CT_04 | Same item, same option twice | Same item, half, add twice | One row; quantities and amounts added | | | |
-| CT_05 | Same item, different option | Half then full | Two separate rows | | | |
-| CT_06 | Same option added again after a different option | Half, full, full | Second "full" updates the existing full row; no duplicate row | | | |
-| CT_07 | Remove an item | Click Remove | Row removed; total updated | | | |
-| CT_08 | Total price | 3 items | Total = sum of row amounts | | | |
-| CT_09 | Empty cart | Nothing in cart | Message "The Cart is Empty!" | | | |
-| CT_10 | Cart details readable (DEF-01) | Cart with items | All text and the Check Out label clearly visible | | | |
-| CT_11 | Add to cart without login | Not logged in | Redirected to login page | | | |
- 
+| CT_01 | Quantity 1 (minimum) | Qty 1, half | 1 row; amount = 1 x half price | Cart showed 1 row: Veg Fried Rice, qty 1, half, amount 110; Total Price 110. (07_Screenshots/Cart/CT_01_qty_1.png) | Pass | - |
+| CT_02 | Quantity 6 (maximum) | Qty 6, full | Quantity 6; amount = 6 x full price | Veg Biryani qty 6, full, amount 1560, matching the card price of 1560. Total Price 1670 with the earlier row. (07_Screenshots/Cart/CT_02_qty_6.png) | Pass | - |
+| CT_03 | Maximum quantity offered | Open quantity dropdown | Only 1 to 6 offered; 7 not selectable | Quantity dropdown offered 1, 2, 3, 4, 5 and 6 only; no 7 or higher. (07_Screenshots/Cart/CT_03_quantity_options.png) | Pass | - |
+| CT_04 | Same item, same option twice | Same item, half, add twice | One row; quantities and amounts added | Adding Veg Fried Rice qty 1, half a second time created a second separate half row (qty 1, 110) instead of one row with qty 2, 220. Total 1980. (07_Screenshots/Cart/CT_04_same_item_twice.png) | Fail | DEF-04 |
+| CT_05 | Same item, different option | Half then full | Two separate rows | Veg Fried Rice shown as 2 separate rows: half (qty 1, 110) and full (qty 1, 200). Veg Biryani unchanged. Total 1870. (07_Screenshots/Cart/CT_05_different_option.png) | Pass | - |
+| CT_06 | Same option added again after a different option | Half, full, full | Second "full" updates the existing full row; no duplicate row | Adding Veg Fried Rice qty 1, full when a full row already existed created a second separate full row (qty 1, 200) instead of updating it to qty 2, 400. Total 2070. (07_Screenshots/Cart/CT_06_full_again.png) | Fail | DEF-04 |
+| CT_07 | Remove an item | Click Remove | Row removed; total updated | Removed one Veg Fried Rice full row; 3 rows remained with numbering updated; total changed from 2070 to 1870. (07_Screenshots/Cart/CT_07_remove_item.png) | Pass | - |
+| CT_08 | Total price | 3 items | Total = sum of row amounts | Sum of row amounts 1560 + 110 + 200 = 1870; app Total Price 1870. (07_Screenshots/Cart/CT_08_total_price.png) | Pass | - |
+| CT_09 | Empty cart | Nothing in cart | Message "The Cart is Empty!" | Cart opened with the message "The Cart is Empty!" (cart badge 0). The text is very faint; readability is logged under CT_10. (07_Screenshots/Cart/CT_09_empty_cart.png) | Pass | - |
+| CT_10 | Cart details readable | Empty cart | All text clearly visible | The message "The Cart is Empty!" is dark text on a dark background and is almost invisible. The cart with items is readable. (07_Screenshots/Cart/CT_10_cart_text_before.png) | Fail | DEF-05 |
+| CT_11 | Add to cart without login | Not logged in | Redirected to login page | After logout, the home page showed only Login and Signup, and the login page (Email Address, Password, Submit) was displayed. (07_Screenshots/Cart/CT_11_not_logged_in.png) | Pass | - |
+
+
 ## 5. Order and order history
  
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
