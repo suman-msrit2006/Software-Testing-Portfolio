@@ -55,7 +55,7 @@ Defect distribution:
 | Minor | 4 | | Medium | 2 |
 | | | | Low | 2 |
  
-Each defect has its own report in the defects folder, with screenshots in `07_Screenshots`.
+Each defect has its own report in `04_Defect_Reports`, with screenshots in `07_Screenshots`.
  
 ## 5. Observations
  
