@@ -6,9 +6,9 @@
 | Application under test | BlissBite (https://github.com/vrun545/food-delivery-app) |
 | Prepared by | Suman J Mulla (1MS23IS130), Nuthana T M (1MS24IS410), Harshitha M V (1MS24IS407) |
 | College | M. S. Ramaiah Institute of Technology (MSRIT), Information Science and Engineering, 7th Semester, B Section |
-| Faculty | Pushpalatha |
+| Faculty | Dr. Pushpalatha M. N |
 | Version | 1.0 |
-| Date | 15-11-2026 |
+| Date | 18-11-2026 |
  
 ---
  
