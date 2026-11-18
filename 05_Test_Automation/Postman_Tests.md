@@ -53,15 +53,15 @@ Only fake test data is used.
 | PM_07 | POST /api/items | Get the menu data | No body | 200 OK, food items and categories returned | 200 OK; JSON array with the food items (name, image, half and full prices, description) and categories | Pass | MN_01 |
 | PM_08 | POST /api/orderData | Place an order | api04@test.com, date Wed Nov 18 2026, 1 x Fish Biryani (half, 200) | 200 OK, `success: true` | 200 OK; `success: true` | Pass | OR_01 |
 | PM_09 | POST /api/myOrderData | Order history for an email with orders | api04@test.com | 200 OK, the placed order returned | 200 OK; `orderData` for api04@test.com with the order dated Wed Nov 18 2026 containing Fish Biryani (qty 1, half, 200) | Pass | OR_02 |
-| PM_10 | POST /api/myOrderData | Order history for an email with no orders | noorders@test.com | 404 Not Found, "Data Not Found" | (fill in after running PM_10) | (Pass or Fail) | OR_05 |
- 
+| PM_10 | POST /api/myOrderData | Order history for an email with no orders | noorders@test.com | 404 Not Found, "Data Not Found" | 404 Not Found; `error: "Data Not Found"` | Pass | OR_05 |
+
 ## 6. Summary
- 
+
 | Item | Count |
 |------|-------|
 | Total requests | 10 |
-| Passed | 9 (update after PM_10) |
-| Failed | 0 (update after PM_10) |
+| Passed | 10 |
+| Failed | 0 |
 | New defects found through Postman | 0 |
  
 Screenshots: `07_Screenshots/Postman/` (`PM_01_signup_valid.png`, `PM_02_signup_duplicate.png`, `PM_03_signup_password_4_chars.png`, `PM_04_signup_empty_body.png`, `PM_05_login_valid.png`, `PM_06_login_wrong_password.png`, `PM_07_menu_data.png`, `PM_08_place_order.png`, `PM_09_order_history.png`, `PM_10_history_no_orders.png`).
