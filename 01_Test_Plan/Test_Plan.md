@@ -21,6 +21,7 @@ This document describes how we will test BlissBite, an open-source MERN stack fo
 - Verify the order flow from cart to order history.
 - Find and document defects with clear evidence.
 - Carry out one tool-based testing activity (API testing with Postman).
+- 
 ## 3. Application Under Test
 | Item | Details |
 |------|---------|
@@ -31,7 +32,7 @@ This document describes how we will test BlissBite, an open-source MERN stack fo
 | How it is run | Locally. Frontend at http://localhost:3000, backend at http://localhost:5000 |
 | License | MIT |
  
-The application was written by its original author. We test it as the system under test. Any change we make to it (for example, the fix for DEF-01) is recorded in the related defect report.
+The application was written by its original author. We test it as the system under test. No changes were made to the application.
  
 ## 4. Scope
  
