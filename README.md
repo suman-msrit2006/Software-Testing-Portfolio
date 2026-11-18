@@ -3,9 +3,9 @@
 ## Student Details
 | Name | USN | Role |
 |------|-----|------|
-| Suman J Mulla | 1MS23IS130 | Team Member |
-| Nuthana T M | 1MS24IS410 | Team Member |
-| Harshitha M V | 1MS24IS407 | Team Member |
+| Suman J Mulla | 1MS23IS130 | Test plan, signup and login test cases, README |
+| Nuthana T M | 1MS24IS410 | Menu, search and cart test cases, defect reports |
+| Harshitha M V | 1MS24IS407 | Order and history test cases, Postman API testing |
 
 **College:** M. S. Ramaiah Institute of Technology (MSRIT), Bengaluru
 **Department:** Information Science and Engineering
