@@ -64,27 +64,35 @@
 | CT_10 | Cart details readable | Empty cart | All text clearly visible | The message "The Cart is Empty!" is dark text on a dark background and is almost invisible. The cart with items is readable. (07_Screenshots/Cart/CT_10_cart_text_before.png) | Fail | DEF-05 |
 | CT_11 | Add to cart without login | Not logged in | Redirected to login page | After logout, the home page showed only Login and Signup, and the login page (Email Address, Password, Submit) was displayed. (07_Screenshots/Cart/CT_11_not_logged_in.png) | Pass | - |
 
-
 ## 5. Order and order history
- 
+
 | TC ID | Description | Test Data | Expected Result | Actual Result | Status | Defect ID |
 |-------|-------------|-----------|-----------------|---------------|--------|-----------|
-| OR_01 | Place an order | Logged in, items in cart, Check Out | Order saved; cart emptied | | | |
-| OR_02 | Order appears in My Orders | After OR_01 | Date, items, quantity, option and price shown | | | |
-| OR_03 | Order total matches cart total | Compare cart and My Orders | Sums are equal | | | |
-| OR_04 | Second order on same account | New items, Check Out | New order added; earlier order kept | | | |
-| OR_05 | My Orders with no orders | New account, no orders | Page opens without crashing; empty history | | | |
+| OR_01 | Place an order | Logged in, items in cart, Check Out | Order saved; cart emptied | Added Veg Biryani (1, half, 150), Veg Fried Rice (1, half, 110) and Chicken Biryani (1, half, 170); cart total 430. After Check Out the cart was emptied and the badge reset to 0. (07_Screenshots/Order_History/OR_01_cart_before_checkout.png, 07_Screenshots/Order_History/OR_01_checkout.png) | Pass | - |
+| OR_02 | Order appears in My Orders | After OR_01 | Date, items, quantity, option and price shown | My Orders showed the order dated Wed Nov 18 2026 with Veg Biryani (1, half, 150), Veg Fried Rice (1, half, 110) and Chicken Biryani (1, half, 170). (07_Screenshots/Order_History/OR_02_my_orders.png) | Pass | - |
+| OR_03 | Order total matches cart total | Compare cart and My Orders | Sums are equal | Cart total before checkout was 430; the My Orders items add up to 150 + 110 + 170 = 430; the totals are equal. (07_Screenshots/Order_History/OR_03_total_match.png, 07_Screenshots/Order_History/OR_03_cart_total_before.png) | Pass | - |
+| OR_04 | Second order on same account | New items, Check Out | New order added; earlier order kept | Second order with 2 items (Prawns Fried Rice 1, half, 120 and Fish Biryani 1, half, 200; total 320) was added at the top of My Orders; the first order with 3 items was still listed. (07_Screenshots/Order_History/OR_04_second_order.png) | Pass | - |
+| OR_05 | My Orders with no orders | New account, no orders | Page opens without crashing; empty history | Logged in as su04@test.com; My Orders opened without an error and showed the message "No Order History is Present". (07_Screenshots/Order_History/OR_05_no_orders.png) | Pass | - |
  
----
  
-## Result summary (fill after execution)
+## Result summary
  
 | Module | Total | Passed | Failed |
 |--------|-------|--------|--------|
-| Signup | 10 | | |
-| Login | 6 | | |
-| Menu and search | 6 | | |
-| Cart | 11 | | |
-| Order and history | 5 | | |
-| **Total** | **38** | | |
+| Signup | 10 | 5 | 5 |
+| Login | 6 | 6 | 0 |
+| Menu and search | 6 | 5 | 1 |
+| Cart | 11 | 8 | 3 |
+| Order and history | 5 | 5 | 0 |
+| **Total** | **38** | **29** | **9** |
+ 
+## Defects found
+ 
+| Defect ID | Module | Summary | Failed test cases | Severity |
+|-----------|--------|---------|-------------------|----------|
+| DEF-01 | Signup | Invalid input (short name, password or location, duplicate email) is silently accepted as success, with no error message | SU_03, SU_05, SU_07, SU_09 | See DEF_01 report |
+| DEF-02 | Signup | Empty signup form is submitted with no validation message | SU_10 | See DEF_02 report |
+| DEF-03 | Menu and search | Food item image and a page image fail to load on the home page | MN_01 | Minor |
+| DEF-04 | Cart | Adding the same item and portion again creates a duplicate cart row | CT_04, CT_06 | Minor |
+| DEF-05 | Cart | "The Cart is Empty!" message is unreadable (dark text on dark background) | CT_10 | Minor |
  
