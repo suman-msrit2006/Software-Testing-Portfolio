@@ -56,10 +56,11 @@ The 9 failed manual cases map to 5 defects: 1 Major and 4 Minor.
  
 | Folder | Contents |
 |--------|----------|
-| Test plan | Test plan |
-| Test cases and execution | Test case execution sheet with results |
-| Defect reports | DEF-01 to DEF-05 |
-| 05_Test_Automation | Postman_Tests.md, collection JSON, environment JSON |
-| 06 (Test summary) | Test_Summary.md |
-| 07_Screenshots | Evidence for manual and Postman tests |
+| 01_Test_Plan | Test_Plan.md |
+| 02_Test_Case_Design | Test_Cases.md (38 test cases) |
+| 03_Test_Execution | Test_Execution.md (results and defect table) |
+| 04_Defect_Reports | DEF-01 to DEF-05 reports |
+| 05_Test_Automation | Postman_Tests.md and the Postman collection (JSON) |
+| 06_Test_Reports | Test_Summary.md |
+| 07_Screenshots | Evidence for manual and Postman tests (Signup, Login, Menu_Search, Cart, Order_History, Postman) |
  
