@@ -86,13 +86,13 @@
 | Order and history | 5 | 5 | 0 |
 | **Total** | **38** | **29** | **9** |
  
-## Defects found
- 
-| Defect ID | Module | Summary | Failed test cases | Severity |
-|-----------|--------|---------|-------------------|----------|
-| DEF-01 | Signup | Invalid input (short name, password or location, duplicate email) is silently accepted as success, with no error message | SU_03, SU_05, SU_07, SU_09 | See DEF_01 report |
-| DEF-02 | Signup | Empty signup form is submitted with no validation message | SU_10 | See DEF_02 report |
-| DEF-03 | Menu and search | Food item image and a page image fail to load on the home page | MN_01 | Minor |
-| DEF-04 | Cart | Adding the same item and portion again creates a duplicate cart row | CT_04, CT_06 | Minor |
-| DEF-05 | Cart | "The Cart is Empty!" message is unreadable (dark text on dark background) | CT_10 | Minor |
+# Defects Found
+
+| Defect ID | Module | Summary | Failed Test Cases | Severity | Priority |
+|---|---|---|---|---|---|
+| DEF-01 | Signup | Invalid inputs (short name, password or location, duplicate email) are silently accepted as successful, without displaying an error message. | SU_03, SU_05, SU_07, SU_09 | **Major** | **High** |
+| DEF-02 | Signup | Signup form can be submitted with all fields empty without displaying a validation message. | SU_10 | **Minor** | **Medium** |
+| DEF-03 | Menu and Search | Food item image and a page image fail to load on the home page. | MN_01 | **Minor** | **Low** |
+| DEF-04 | Cart | Adding the same item with the same portion again creates a duplicate cart row instead of updating the existing entry. | CT_04, CT_06 | **Minor** | **Medium** |
+| DEF-05 | Cart | The "The Cart is Empty!" message is unreadable due to dark text on a dark background. | CT_10 | **Minor** | **Low** |
  
